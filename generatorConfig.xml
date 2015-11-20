@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<classPathEntry location="C:/Users/Bo/.m2/repository/mysql/mysql-connector-java/5.1.34/mysql-connector-java-5.1.34.jar" /> 
+  <context id="user" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/boge"
+      userId="root" password="7758521song">
+    </jdbcConnection>
+   <javaModelGenerator targetPackage="com.boge.pojo" targetProject="Pro/src/main/java">
+    </javaModelGenerator>
+    
+    <sqlMapGenerator targetPackage="com.boge.xml" targetProject="Pro/src/main/java">
+    </sqlMapGenerator>
+    
+   <javaClientGenerator type="XMLMAPPER" targetPackage="com.boge.mapper"
+      targetProject="Pro/src/main/java">
+    </javaClientGenerator>
+    
+    <table schema="boge" tableName="user" domainObjectName="User">
+    </table>
+  </context>
+</generatorConfiguration>
